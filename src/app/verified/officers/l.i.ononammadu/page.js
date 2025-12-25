@@ -113,7 +113,7 @@ const OfficerProfilePage = () => {
   return (
     <VerifiedOfficerProfile
       name=" Lawrence I. Ononammadu"
-      photo="/assets/ononammadu.jpeg"
+      photo="/assets/Ononammadu.jpeg"
       rank="Cadet Lance Corporal"
       dob="10-08-2006"
       address="54, Alabi Oyo street Bucknor, Ejigbo, Lagos State, Nigeria"
@@ -155,3 +155,4 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
+
