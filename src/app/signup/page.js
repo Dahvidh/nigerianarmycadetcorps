@@ -4,7 +4,7 @@ import { Toaster, toast } from "react-hot-toast";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { registerOfficer } from "../../config/firebase";
+import { registerOfficer } from "config/firebase";
 
 export default function SignUpToast() {
   const [email, setEmail] = useState("");
