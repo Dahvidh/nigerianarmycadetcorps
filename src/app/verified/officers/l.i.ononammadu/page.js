@@ -120,7 +120,7 @@ const OfficerProfilePage = () => {
       intake="2024"
       recruitmentDetails={{
         SerialNo: "NACC/OC/FSTCY/24/B/003",
-        Batch: "2023 Bravo",
+        Batch: "2024 Bravo",
         Platoon: "Bravo Platoon",
         Department: "Cadet Police",
         Instructor: "CDT MAJ Adanu Ellen",
@@ -155,4 +155,5 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
+
 
