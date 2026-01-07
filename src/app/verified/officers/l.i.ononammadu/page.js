@@ -115,7 +115,7 @@ const OfficerProfilePage = () => {
       name=" Lawrence I. Ononammadu"
       photo="/assets/Ononammadu.jpeg"
       rank="Cadet Lance Corporal"
-      dob="10-08-2006"
+      dob="16-05-2004"
       address="54, Alabi Oyo street Bucknor, Ejigbo, Lagos State, Nigeria"
       intake="2024"
       recruitmentDetails={{
@@ -155,5 +155,6 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
+
 
 
