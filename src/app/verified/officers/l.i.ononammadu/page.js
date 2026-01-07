@@ -113,13 +113,13 @@ const OfficerProfilePage = () => {
   return (
     <VerifiedOfficerProfile
       name=" Lawrence I. Ononammadu"
-      photo="/assets/ononammadu.jpeg"
+      photo="/assets/Ononammadu.jpeg"
       rank="Cadet Lance Corporal"
       dob="10-08-2006"
       address="54, Alabi Oyo street Bucknor, Ejigbo, Lagos State, Nigeria"
       intake="2024"
       recruitmentDetails={{
-        SerialNo: "NACC/OC/FSTCY/24/B/00",
+        SerialNo: "NACC/OC/FSTCY/24/B/003",
         Batch: "2023 Bravo",
         Platoon: "Bravo Platoon",
         Department: "Cadet Police",
@@ -155,3 +155,4 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
+
