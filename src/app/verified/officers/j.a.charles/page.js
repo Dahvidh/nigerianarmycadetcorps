@@ -123,7 +123,7 @@ const VerifiedOfficerProfile = ({
 const OfficerProfilePage = () => {
   return (
     <VerifiedOfficerProfile
-      name=" Jude A. Charle"
+      name=" Jude A. Charles"
       photo="/assets/char!se.jpg"
       rank="Cadet Lance Corporal"
       dob="03-04-2005"
@@ -163,4 +163,5 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
+
 
