@@ -119,11 +119,11 @@ const OfficerProfilePage = () => {
       address="54, Alabi Oyo street Bucknor, Ejigbo, Lagos State, Nigeria"
       intake="2024"
       recruitmentDetails={{
-        SerialNo: "NACC/OC/FSTCY/24/B/00",
+        SerialNo: "NACC/OC/FSTCY/24/B/003",
         Batch: "2023 Bravo",
         Platoon: "Bravo Platoon",
         Department: "Cadet Police",
-        Instructor: "CDT MAJ Adanu Ellen",
+        Instructor: "CDT MAJ Daniel Chima",
         "Recruitment Date": "2024-08-15",
         "Medical Status": "Fit",
         Status: "Active",
@@ -155,3 +155,4 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
+
