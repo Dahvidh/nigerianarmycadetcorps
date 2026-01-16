@@ -163,5 +163,3 @@ const OfficerProfilePage = () => {
 };
 
 export default OfficerProfilePage;
-
-
