@@ -13,7 +13,18 @@ const VerifiedOfficerProfile = ({
   achievements = [],
   medicalDetails = {},
 }) => {
-  console.log("Officer Info:", { name, photo, rank, dob, address, intake, recruitmentDetails, fouls, achievements, medicalDetails });
+  console.log("Officer Info:", {
+    name,
+    photo,
+    rank,
+    dob,
+    address,
+    intake,
+    recruitmentDetails,
+    fouls,
+    achievements,
+    medicalDetails,
+  });
 
   return (
     <div className="max-w-4xl mx-auto bg-white dark:bg-gray-900 shadow-xl rounded-2xl p-6 mt-8 text-gray-900 dark:text-gray-100">
@@ -112,28 +123,28 @@ const VerifiedOfficerProfile = ({
 const OfficerProfilePage = () => {
   return (
     <VerifiedOfficerProfile
-      name=" Lawrence I. Ononammadu"
-      photo="/assets/ononammadu.jpeg"
-      rank="Cadet Lance Corporal"
-      dob="10-08-2006"
-      address="54, Alabi Oyo street Bucknor, Ejigbo, Lagos State, Nigeria"
-      intake="2024"
+      name="  Asuzu Moses Ugochukwu"
+      photo="/assets/ug2.jpg"
+      rank="Cadet Staff Sergeant"
+      dob="09-02-1999"
+      address="52, Oje, Igando, Lagos State, Nigeria"
+      intake="2021"
       recruitmentDetails={{
-        SerialNo: "NACC/OC/FSTCY/24/B/00",
-        Batch: "2023 Bravo",
+        SerialNo: "NACC/OC/FSTCY/21/B/024",
+        Batch: "2021 Bravo",
         Platoon: "Bravo Platoon",
-        Department: "Cadet Police",
-        Instructor: "CDT MAJ Adanu Ellen",
-        "Recruitment Date": "2024-08-15",
+        Department: "Anti Ripping Squad",
+        Instructor: "CDT MAJ Chima Daniel",
+        "Recruitment Date": "2021-10-30",
         "Medical Status": "Fit",
         Status: "Active",
-        Post: "Cadet Police",
+        Post: "Nil",
         "Training Status": "Active",
       }}
       medicalDetails={{
         BloodGroup: "O+",
         Genotype: "AA",
-        Height: "5'9\"",
+        Height: "182.88",
         Weight: "72kg",
         Colorblind: "No",
         Allergies: "None",
@@ -146,10 +157,7 @@ const OfficerProfilePage = () => {
           action: "",
         },
       ]}
-      achievements={[
-        " ",
-        
-      ]}
+      achievements={[" "]}
     />
   );
 };
