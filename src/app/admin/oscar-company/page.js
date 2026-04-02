@@ -8,9 +8,12 @@ const folders = [
   { name: "D.C Chima", link: "/verified/officers/d.c.chima" },
   { name: "D.O Nnamdi", link: "/verified/officers/d.o.nnamdi" },
   { name: "L.I Ononammadu", link: "/verified/officers/l.i.ononammadu" },
+  { name: "J.A Charles", link: "/verified/officers/j.a.charles" },
   { name: "J.O Aneke", link: "/verified/officers/j.o.aneke" },
-    { name: "O.C Simon", link: "/verified/officers/o.c.simon" },
-  { name: "O.T Richard", link: "/verified/officers/o.t.richard" },
+  { name: "O.C Simon", link: "/verified/officers/o.c.simon" },
+  { name: "M.E Obineme", link: "/verified/officers/m.e.obineme" },
+  { name: "M.U Asuzu", link: "/verified/officers/m.u.asuzu" },
+  { name: "T.E Ubah", link: "/verified/officers/t.e.ubah" },
 ];
 
 export default function FolderGrid() {

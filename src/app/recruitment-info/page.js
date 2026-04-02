@@ -47,7 +47,6 @@ export default function RecruitmentPortal() {
               <strong>Minimum Educational Qualification:</strong>
               <ul className="list-disc list-inside ml-5 mt-1">
                 <li>NCO Cadre: SSCE or equivalent.</li>
-                 <li>Graduate Cadre, Senior CO, Patrons, Patronesses: HND, BSc, Postgraduate degrees or equivalent.</li>
               </ul>
             </li>
           </ul>
@@ -71,7 +70,9 @@ export default function RecruitmentPortal() {
         <div>
           <h2 className="font-bold text-lg mb-2">Registration Process</h2>
           <ul className="list-disc list-inside space-y-1">
-            <li>Kindly find your way to the Cadet Armoury at Federal Science and Technical College, Yaba </li>
+            <li>Account Creation: Click "Register" to create an account.</li>
+            <li>Email Verification: Verify your email via the link sent.</li>
+            <li>Login: Log in with your email and password.</li>
           </ul>
         </div>
 
@@ -89,7 +90,7 @@ export default function RecruitmentPortal() {
               You are to provide a recent passport of yourself in JPG, PNG, or
               JPEG format.
             </li>
-            <li>Submit the required documents.</li>
+            <li>Upload the required documents.</li>
             <li>
               Confirm all details are accurate and submit your application.
             </li>
@@ -97,7 +98,7 @@ export default function RecruitmentPortal() {
         </div>
 
         {/* Submission and Confirmation */}
-{/* <div>
+        <div>
           <h2 className="font-bold text-lg mb-2">
             Submission and Confirmation
           </h2>
@@ -105,12 +106,13 @@ export default function RecruitmentPortal() {
             <li>Review and submit your application.</li>
             <li>Receive a confirmation email.</li>
           </ul>
-        </div> */}
+        </div>
 
         {/* Application Status */}
         <div className="bg-gray-100 p-6 rounded-lg">
           <h2 className="font-bold text-lg mb-2">Application Status</h2>
           <ul className="list-disc list-inside space-y-1">
+            <li>Check your application status in your account.</li>
             <li>Successful applicants will be notified via email and SMS.</li>
           </ul>
         </div>
@@ -118,4 +120,3 @@ export default function RecruitmentPortal() {
     </div>
   );
 }
-
