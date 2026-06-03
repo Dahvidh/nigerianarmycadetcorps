@@ -4,23 +4,23 @@ const NewsUpdate = () => {
   const newsItems = [
     {
       image: "/news1.jpg",
-      title:
+      /*title:
         "NATIONAL COMMANDER OF MAN O WAR NIGERIA VISITS ONDO STATE GOVERNOR’S OFFICE",
       description:
-        "The National Commander of Man O War Nigeria, CN Academician Gbenega Emmanuel, recently paid an official visit to the Ondo State Governor Office in Akure.",
+        "The National Commander of Man O War Nigeria, CN Academician Gbenega Emmanuel, recently paid an official visit to the Ondo State Governor Office in Akure.",*/
     },
     {
       image: "/news2.jpg",
-      title:
+      /*title:
         "MAN O WAR NIGERIA ACTING NATIONAL COMMANDER PAYS HOMAGE TO FORMER MINISTER OF YOUTH AND SPORT",
       description:
-        "The Acting National Commander paid homage to former Minister of Youth and Sport, Mr. Sunday Dare Akin, in Ogbomosho, Oyo State.",
+        "The Acting National Commander paid homage to former Minister of Youth and Sport, Mr. Sunday Dare Akin, in Ogbomosho, Oyo State.",*/
     },
     {
       image: "/news3.jpg",
-      title: "PROFILE OF THE ACTING NATIONAL COMMANDER MAN O WAR NIGERIA",
+      /*title: "PROFILE OF THE ACTING NATIONAL COMMANDER MAN O WAR NIGERIA",
       description:
-        "Profile of the Acting National Commander Man O War Nigeria, CN Academician Gbenega Emmanuel, MIPM.",
+        "Profile of the Acting National Commander Man O War Nigeria, CN Academician Gbenega Emmanuel, MIPM.",*/
     },
   ];
 

@@ -1,102 +1,139 @@
-import React from "react";
+"use client";
 
-const Footer = () => {
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const quickLinks = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Courses", href: "/course" },
+    { name: "News", href: "/news" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
+  ];
+
+  const socialLinks = [
+    {
+      icon: <FaFacebookF />,
+      href: "https://facebook.com",
+    },
+    {
+      icon: <FaInstagram />,
+      href: "https://instagram.com",
+    },
+    {
+      icon: <FaXTwitter />,
+      href: "https://x.com",
+    },
+    {
+      icon: <FaYoutube />,
+      href: "https://youtube.com",
+    },
+  ];
+
   return (
-    <footer className="bg-red-600 text-black-900 p-6 text-center">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <footer className="bg-red-700 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-3 gap-10">
+          {/* Corps Information */}
           <div>
-            <h3 className="text-lg font-bold">Nigerian Army Cadet Corps</h3>
-            <p>
+            <h3 className="text-xl font-bold mb-4">
+              Nigerian Army Cadet Corps
+            </h3>
+
+            <p className="mb-3 text-gray-100">
               FSTC Yaba, 68 Nigerian Army Reference Hospital, Myhoung Barracks,
               Lagos State, Nigeria.
             </p>
-            <p>
-              <strong>Phone:</strong> +23490 6666 9288
+
+            <p className="mb-2">
+              <strong>Phone:</strong> +234 906 666 9288
             </p>
-            <p>
+
+            <p className="mb-4 break-all">
               <strong>Email:</strong> nigerianarmycadetocoy@gmail.com
             </p>
-            <div className="flex justify-center space-x-3 mt-2">
-              <a href="#" className="text-white">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-white">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="text-white">
-                <i className="fab fa-instagram"></i>
-              </a>
+
+            <div className="flex gap-4 text-xl">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-300 transition"
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold">Useful Links</h3>
-            <ul>
-              <li>
-                <a href="/" className="text-white">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="text-white">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="/course" className="text-white">
-                  Course
-                </a>
-              </li>
-              {/*<li>
-                <a href="#" className="text-white">
-                  Directorates
-                </a>
-              </li>*/}
-              {/*<li>
-                <a href="/hierachy" className="text-white">
-                  Command
-                </a>
-              </li>*/}
-              <li>
-                <a href="/news" className="text-white">
-                  News
-                </a>
-              </li>
-              <li>
-                <a href="/gallery" className="text-white">
-                  Photos
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-white">
-                  Contact
-                </a>
-              </li>
+            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+
+            <ul className="space-y-2">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-yellow-300 transition"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
+          {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-bold">Our Newsletter</h3>
-            <p>
-              Subscribe to get daily tips on Security, Nation's building etc.
+            <h3 className="text-xl font-bold mb-4">Newsletter</h3>
+
+            <p className="mb-4 text-gray-100">
+              Subscribe to receive updates on training, leadership development,
+              activities, and national events.
             </p>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="p-2 rounded-md text-black"
-            />
-            <button className="bg-black text-white p-2 rounded-md ml-2">
-              Subscribe
-            </button>
+
+            <form className="flex flex-col sm:flex-row gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 p-3 rounded-md text-black outline-none"
+              />
+
+              <button
+                type="submit"
+                className="bg-black hover:bg-gray-900 px-4 py-3 rounded-md"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
+
+        {/* Bottom Footer */}
+        <div className="border-t border-red-500 mt-10 pt-6 text-center">
+          <p>
+            © {currentYear} <strong>Nigerian Army Cadet Corps</strong>. All
+            Rights Reserved.
+          </p>
+
+          <p className="mt-2 text-sm">
+            Designed and Maintained by{" "}
+            <strong>Directorate of training, NACC</strong>
+          </p>
+        </div>
       </div>
-      <br /> <br />
-      &copy; Copyright 2025 <strong>Nigerian Army Cadet Corps</strong>. All
-      Rights Reserved
-      <br />
-      Designed by <strong>Cyber Operations Unit, Oscar Company, NACC. </strong>
     </footer>
   );
-};
-
-export default Footer;
+}
