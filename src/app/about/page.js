@@ -1,176 +1,255 @@
-import { FaRegLightbulb, FaUsers } from "react-icons/fa";
+import {
+  FaRegLightbulb,
+  FaUsers,
+  FaShieldAlt,
+  FaDumbbell,
+  FaFlag,
+} from "react-icons/fa";
 import Header from "../components/Header";
 
 export default function AboutUs() {
+  const schools = [
+    "Cadet Police",
+    "Medical",
+    "Signals",
+    "Intelligence",
+    "Logistics",
+    "Drill",
+    "Fieldcraft",
+    "Engineering",
+    "Leadership",
+    "Band",
+    "Finance",
+  ];
+
   return (
     <>
       <Header />
 
-      <div className="flex flex-col bg-white shadow-lg rounded-lg p-6 max-w-6xl mx-auto">
-        {/* Content Section */}
-        <div className="p-6 flex flex-col justify-center">
-          <h2 className="text-2xl font-bold text-black mb-4">About Us</h2>
-          <p className="text-gray-600 mb-4">
-            Nigerian Army Cadet Forces, which later became known as Nigerian
-            Army Cadet Corps (NACC), is a youth paramilitary organization
-            modeled to instill discipline, patriotism, leadership, and
-            military-style training among young Nigerians, particularly at the
-            secondary school level. While it is not part of the official
-            Nigerian Army, its activities are supervised and guided by the
-            Nigerian Army. The NACC is influenced by military doctrine and
-            structure, and its roots trace back to post-colonial Nigeria's
-            broader goals of national unity, defense consciousness, and youth
-            empowerment.
-          </p>
+      {/* Hero Section */}
+      <section className="relative h-[450px]">
+        <img
+          src="/assets/13.04.29_d09fc737.jpg"
+          alt="NACC Cadets"
+          className="w-full h-full object-cover"
+        />
 
-          <h3 className="text-lg font-bold text-black mb-2">
-            History and Development
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+          <div className="text-center text-white px-6">
+            <h1 className="text-5xl font-bold mb-4">
+              Nigerian Army Cadet Corps
+            </h1>
+
+            <p className="text-xl max-w-3xl mx-auto">
+              Building Discipline, Leadership, Patriotism and Service Among
+              Nigerian Youths.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-4xl font-bold mb-6 text-black">
+          About the Nigerian Army Cadet Corps
+        </h2>
+
+        <p className="text-gray-700 leading-relaxed mb-8">
+          The Nigerian Army Cadet Corps (NACC) is a voluntary youth organization
+          dedicated to developing disciplined, responsible, patriotic, and
+          service-oriented young Nigerians through structured military-style
+          training, leadership development, physical fitness, civic education,
+          and character building.
+        </p>
+
+        {/* Corps Overview */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-green-700 mb-4">
+            Corps Overview
           </h3>
-          <p className="text-gray-600 mb-2">
-            Established in 1976 during the military regime of General Olusegun
-            Obasanjo as a youth paramilitary organization inspired by the
-            structure and discipline of the Nigerian Army. It was designed to
-            instill leadership, discipline, physical fitness, and patriotism in
-            young Nigerians, especially students in secondary schools and some
-            tertiary institutions. The idea was heavily influenced by the
-            British Army Cadet Force and the Junior Reserve Officers' Training
-            Corps (JROTC) in the United States.
-          </p>
-          <p className="text-gray-600 mb-2">
-            Mid-to-late 1980s: Some secondary schools, particularly Federal
-            Government Colleges and Unity Schools, began introducing Cadet units
-            with military-style drills.
-          </p>
-          <p className="text-gray-600 mb-2">
-            1990s: Informal expansion and growth of NACC units began in Northern
-            and South-Western Nigeria, especially in schools near military
-            barracks or cantonments.
-          </p>
-          <p className="text-gray-600 mb-2">
-            1996–1999: The name "Nigerian Army Cadet Corps" became more formally
-            used in several school units and adopted Nigerian Army ranks,
-            drills, and parade customs.
-          </p>
-          <p className="text-gray-600 mb-2">
-            Today, the Nigerian Army Cadet Corps exists in many secondary
-            schools across the country, especially in Unity Schools, Federal
-            Government Colleges, and military-affiliated schools. It's not
-            officially part of the Nigerian Armed Forces but is recognized for
-            its role in youth military education and leadership training.
-          </p>
-          <p className="text-gray-600 mb-2">
-            Early 2000s: More schools across the country established NACC as a
-            recognized extracurricular or paramilitary club.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2004: Schools began holding inter-school Cadet parades and
-            leadership camps.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2007–2009: Some NACC units started re-aligning with local military
-            commands for training support and mentorship.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2010s: Nationwide presence and coordination began.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2012: The Corps began a push among several schools to unify the
-            corps under a single national command or umbrella.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2014–2017: Several states began forming zonal and state command
-            structures to coordinate cadet activities.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2018: Public awareness of cadet corps increased, with more
-            participation in Independence Day and Armed Forces Remembrance Day
-            parades.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2019: Some NACC Companies were dissolved due to gross misconduct.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2020–2022: NACC adapted to modern formats with the inclusion of
-            digital leadership seminars, and social media presence.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2023: NACC Companies began restructuring, drafting official
-            constitutions, standard operating procedures (SOPs) to align with
-            the original mode of operations, and engaging in partnerships with
-            security agencies for training.
-          </p>
-          <p className="text-gray-600 mb-2">
-            2024–2025: Rising efforts to model the NACC after the Nigerian Army
-            and the British Army Cadet Force, focusing on creating standardized
-            training manuals, rank structures, and national cadet competitions.
-          </p>
 
-          <p className="text-gray-600 mb-4">
-            The NACC often operates in partnership or under the mentorship of
-            local army units or military personnel who serve as trainers or
-            advisors. It is structured similarly to military formations.
+          <p className="text-gray-700">
+            The Corps provides a platform for young Nigerians to develop
+            leadership skills, teamwork, discipline, confidence, patriotism, and
+            national consciousness while preparing them for future leadership
+            responsibilities in society.
           </p>
+        </div>
 
-          <h3 className="text-lg font-bold text-black mb-2">
-            Purpose and Mission
+        {/* Core Objectives */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-green-700 mb-4">
+            Core Objectives
           </h3>
-          <p className="text-gray-600 mb-2">
-            The core mission of the NACC has always been to:
-          </p>
-          <ul className="list-disc list-inside text-gray-600 mb-4">
-            <li>
-              Groom young Nigerians into{" "}
-              <span className="font-semibold">
-                responsible, patriotic citizens
-              </span>
-              .
-            </li>
-            <li>
-              Provide{" "}
-              <span className="font-semibold">
-                basic military-style training
-              </span>{" "}
-              such as drill, physical training (PT), and tactics.
-            </li>
-            <li>
-              Serve as a <span className="font-semibold">feeder program</span>{" "}
-              for the Nigerian Defence Academy (NDA) or a career in the Armed
-              Forces.
-            </li>
+
+          <ul className="list-disc list-inside space-y-3 text-gray-700">
+            <li>Develop leadership skills and patriotism.</li>
+            <li>Promote military-style discipline and responsibility.</li>
+            <li>Encourage civic responsibility and national service.</li>
+            <li>Prepare cadets for future leadership opportunities.</li>
+            <li>Promote national unity and integration.</li>
           </ul>
+        </div>
 
-          {/* Vision */}
-          <div className="flex items-start mb-4">
-            <FaRegLightbulb className="text-blue-600 text-2xl mr-3" />
+        {/* Training Structure */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-green-700 mb-4">
+            Training Structure
+          </h3>
+
+          <ul className="list-disc list-inside space-y-3 text-gray-700">
+            <li>Military drill and ceremonial training.</li>
+            <li>Physical fitness and endurance development.</li>
+            <li>Leadership and command training.</li>
+            <li>Fieldcraft and survival skills.</li>
+            <li>Citizenship education and national values.</li>
+            <li>Specialist departmental training.</li>
+            <li>Leadership camps and exercises.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-white shadow rounded-lg p-6 text-center">
+              <h3 className="text-4xl font-bold text-green-700">36+</h3>
+              <p className="text-gray-600 mt-2">States Represented</p>
+            </div>
+
+            <div className="bg-white shadow rounded-lg p-6 text-center">
+              <h3 className="text-4xl font-bold text-green-700">11</h3>
+              <p className="text-gray-600 mt-2">Specialist Schools</p>
+            </div>
+
+            <div className="bg-white shadow rounded-lg p-6 text-center">
+              <h3 className="text-4xl font-bold text-green-700">3</h3>
+              <p className="text-gray-600 mt-2">Officer Courses</p>
+            </div>
+
+            <div className="bg-white shadow rounded-lg p-6 text-center">
+              <h3 className="text-4xl font-bold text-green-700">100%</h3>
+              <p className="text-gray-600 mt-2">Leadership Focused</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Join */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Why Join the NACC?
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <FaShieldAlt className="text-5xl text-green-700 mx-auto mb-4" />
+              <h3 className="font-bold mb-2">Discipline</h3>
+              <p>Develop strong character and responsibility.</p>
+            </div>
+
+            <div className="text-center">
+              <FaUsers className="text-5xl text-green-700 mx-auto mb-4" />
+              <h3 className="font-bold mb-2">Leadership</h3>
+              <p>Learn command and teamwork skills.</p>
+            </div>
+
+            <div className="text-center">
+              <FaDumbbell className="text-5xl text-green-700 mx-auto mb-4" />
+              <h3 className="font-bold mb-2">Fitness</h3>
+              <p>Improve physical and mental resilience.</p>
+            </div>
+
+            <div className="text-center">
+              <FaFlag className="text-5xl text-green-700 mx-auto mb-4" />
+              <h3 className="font-bold mb-2">Patriotism</h3>
+              <p>Serve and contribute to national development.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cadet Development Pathway */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Cadet Development Pathway
+          </h2>
+
+          <div className="grid md:grid-cols-5 gap-6">
+            {["Recruit", "Cadet", "NCO", "Officer Cadet", "Officer"].map(
+              (rank) => (
+                <div
+                  key={rank}
+                  className="bg-white shadow rounded-lg p-5 text-center"
+                >
+                  <h3 className="font-bold text-green-700">{rank}</h3>
+                </div>
+              ),
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Specialist Schools */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Specialist Schools
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {schools.map((school) => (
+              <div
+                key={school}
+                className="border rounded-lg p-5 hover:shadow-lg transition"
+              >
+                <h3 className="font-bold text-green-700">{school} School</h3>
+
+                <p className="text-sm text-gray-600 mt-2">
+                  Professional specialist training within the Nigerian Army
+                  Cadet Corps.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-10">
+          <div className="flex items-start">
+            <FaRegLightbulb className="text-green-700 text-3xl mr-4 mt-1" />
+
             <div>
-              <h3 className="text-lg font-bold text-black">VISION</h3>
-              <p className="text-gray-600">
-                Our vision is to be the foremost youth paramilitary organization
-                in Nigeria, instilling discipline, patriotism, leadership,
-                military-style excellence in young Nigerians for national
-                development and global relevance, and serving as a preparatory
-                platform for those interested in military, security, or public
-                service careers.
+              <h3 className="text-2xl font-bold mb-3">Vision</h3>
+
+              <p className="text-gray-700">
+                To be Nigeria's foremost youth military-oriented development
+                organization, producing disciplined, patriotic and capable young
+                leaders.
               </p>
             </div>
           </div>
 
-          {/* Mission */}
           <div className="flex items-start">
-            <FaUsers className="text-blue-600 text-2xl mr-3" />
+            <FaUsers className="text-green-700 text-3xl mr-4 mt-1" />
+
             <div>
-              <h3 className="text-lg font-bold text-black">MISSION</h3>
-              <p className="text-gray-600">
-                To train, mentor, and empower Nigerian youth through structured
+              <h3 className="text-2xl font-bold mb-3">Mission</h3>
+
+              <p className="text-gray-700">
+                To train, mentor and empower Nigerian youths through structured
                 military-style education, leadership development, physical
-                training, civic responsibility, and national service, fostering
-                a new generation of morally upright, courageous, and
-                service-oriented citizens.
+                training, civic responsibility and national service.
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
