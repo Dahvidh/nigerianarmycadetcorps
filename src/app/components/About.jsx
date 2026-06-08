@@ -7,7 +7,7 @@ export default function AboutUs() {
       <div className="lg:w-1/2 flex justify-center">
         <div className="border-4 border-indigo-600 p-2 rounded-md">
           <img
-            src="/assets/13.04.29_d09fc737.jpg"
+            src="/assets/C1.jpg"
             alt="About NACC"
             className="w-full rounded-md"
           />
