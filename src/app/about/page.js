@@ -29,7 +29,7 @@ export default function AboutUs() {
       {/* Hero Section */}
       <section className="relative h-[450px]">
         <img
-          src="/assets/13.04.29_d09fc737.jpg"
+          src="assets/10.41.00_6bb7df44.jpg"
           alt="NACC Cadets"
           className="w-full h-full object-cover"
         />
@@ -179,21 +179,25 @@ export default function AboutUs() {
           </h2>
 
           <div className="grid md:grid-cols-5 gap-6">
-            {["Recruit", "Cadet", "NCO", "Officer Cadet", "Officer"].map(
-              (rank) => (
-                <div
-                  key={rank}
-                  className="bg-white shadow rounded-lg p-5 text-center"
-                >
-                  <h3 className="font-bold text-green-700">{rank}</h3>
-                </div>
-              ),
-            )}
+            {[
+              "Recruit",
+              " Cadet JNCO",
+              "Cadet SNCO",
+              "Cadet JCO",
+              "Cadet SCO",
+            ].map((rank) => (
+              <div
+                key={rank}
+                className="bg-white shadow rounded-lg p-5 text-center"
+              >
+                <h3 className="font-bold text-green-700">{rank}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Specialist Schools */}
+      {/* Specialist Schools 
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -216,7 +220,7 @@ export default function AboutUs() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Vision & Mission */}
       <section className="max-w-6xl mx-auto px-6 py-16">
