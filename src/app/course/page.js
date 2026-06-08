@@ -35,7 +35,7 @@ export default function CourseSection() {
 
         <div className="mt-8">
           <Image
-            src="/images/officer-course-banner.jpg"
+            src="/assets/C3.jpg"
             alt="NACC Officer Training"
             width={1200}
             height={500}

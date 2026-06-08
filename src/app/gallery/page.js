@@ -6,20 +6,26 @@ import { useState } from "react";
 const photos = [
   {
     id: 1,
-    src: "/images/photo1.jpg",
+    src: "/assets/C2.jpg",
     details: "Man O War members attending a briefing.",
     date: "Friday 14-06-2024",
   },
   {
     id: 2,
-    src: "/images/photo2.jpg",
+    src: "/assets/C1.jpg",
     details:
       "The National Commander recently paid an official visit to the Ondo State Governor office in Akure.",
     date: "Friday 14-06-2024",
   },
   {
     id: 3,
-    src: "/images/photo3.jpg",
+    src: "/assets/C3.jpg",
+    details: "Award presentation ceremony.",
+    date: "Friday 14-06-2024",
+  },
+  {
+    id: 4,
+    src: "/assets/C4.jpg",
     details: "Award presentation ceremony.",
     date: "Friday 14-06-2024",
   },
@@ -58,9 +64,14 @@ function PhotoCard({ photo }) {
         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center text-white p-4 text-center">
           {/*<p className="text-sm mb-2">{photo.details}</p>*/}
           <p className="text-xs opacity-75 mb-3">{photo.date}</p>
-          <button className="bg-blue-500 px-4 py-1 text-white rounded hover:bg-blue-600 text-sm">
+          <a
+            href={photo.src}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-500 px-4 py-1 text-white rounded hover:bg-blue-600 text-sm"
+          >
             View Image
-          </button>
+          </a>
         </div>
       )}
     </div>

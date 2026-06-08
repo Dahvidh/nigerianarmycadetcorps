@@ -91,72 +91,87 @@ export default function Header() {
             </div>
 
             <Link
-              href="/cadet-police"
+              href="/department/cadet-police"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Cadet Police Course
             </Link>
 
-            <Link href="/Medical" className="block px-4 py-2 hover:bg-gray-100">
+            <Link
+              href="/department/Medical"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
               Medical Course
             </Link>
 
-            <Link href="/Signals" className="block px-4 py-2 hover:bg-gray-100">
+            <Link
+              href="/department/Signals"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
               Signals Course
             </Link>
 
             <Link
-              href="/Intelligence"
+              href="/department/Intelligence"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Intelligence Course
             </Link>
 
             <Link
-              href="/Logistics"
+              href="/department/Logistics"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Logistics Course
             </Link>
 
-            <Link href="/Drill" className="block px-4 py-2 hover:bg-gray-100">
+            <Link
+              href="/department/drill"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
               Drill Course
             </Link>
 
             <Link
-              href="/Fieldcraft"
+              href="/department/Fieldcraft"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Fieldcraft Course
             </Link>
 
             <Link
-              href="/Engineering"
+              href="/department/Engineering"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Engineering Course
             </Link>
 
             <Link
-              href="/Leadership"
+              href="/department/Leadership"
               className="block px-4 py-2 hover:bg-gray-100"
             >
               Leadership Course
             </Link>
 
-            <Link href="/Band" className="block px-4 py-2 hover:bg-gray-100">
+            <Link
+              href="/department/Band"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
               Band Course
             </Link>
 
-            <Link href="/Finance" className="block px-4 py-2 hover:bg-gray-100">
+            <Link
+              href="/department/Finance"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
               Finance Course
             </Link>
           </div>
         </div>
 
-        <Link href="/hall-of-fame" className="hover:text-green-700">
+        {/*<Link href="/hall-of-fame" className="hover:text-green-700">
           Hall of fame
-        </Link>
+        </Link>*/}
 
         <Link href="/news" className="hover:text-green-700">
           News
@@ -268,7 +283,7 @@ export default function Header() {
                       </div>
 
                       <Link
-                        href="/cadet-police"
+                        href="/department/cadet-police"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -276,7 +291,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Medical"
+                        href="/department/Medical"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -284,7 +299,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Signals"
+                        href="/department/Signals"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -292,7 +307,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/intelligence"
+                        href="/department/intelligence"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -300,7 +315,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Logistics"
+                        href="/department/Logistics"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -308,7 +323,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Drill"
+                        href="/department/drill"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -316,7 +331,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Fieldcraft"
+                        href="/department/Fieldcraft"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -324,7 +339,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Engineering"
+                        href="/department/Engineering"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -332,7 +347,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Leadership"
+                        href="/department/Leadership"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -340,7 +355,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Band"
+                        href="/department/Band"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -348,7 +363,7 @@ export default function Header() {
                       </Link>
 
                       <Link
-                        href="/Finance"
+                        href="/department/Finance"
                         className="block py-1"
                         onClick={closeMenu}
                       >
@@ -358,13 +373,13 @@ export default function Header() {
                   )}
                 </div>
 
-                <Link
+                {/*<Link
                   href="/hall-of-fame"
                   className="block py-1"
                   onClick={closeMenu}
                 >
                   Hall of Fame
-                </Link>
+                </Link>*/}
 
                 <Link href="/news" className="block py-1" onClick={closeMenu}>
                   News
