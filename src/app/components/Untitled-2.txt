@@ -1,0 +1,104 @@
+import React from "react";
+
+const LeadershipLegacy = () => {
+  const administrations = [
+    {
+      image: "/leaders/founder.jpg",
+      name: "CDT. COl. Patrick Nubi",
+      rank: "Battalion Commander",
+      regime: "Founding Administration",
+      years: "2010 - 2014",
+    },
+    {
+      image: "/leaders/commander2.jpg",
+      name: "CDT. Col. Michael Jobi-Fele",
+      rank: "Coy Commanding Officer, Oscar Company",
+      regime: "Expansion Administration",
+      years: "2014 - 2018",
+    },
+    {
+      image: "/leaders/founder.jpg",
+      name: "CDT. COl. Oyedele Taiwo (Deceased)",
+      rank: "Battalion Commander",
+      regime: "Founding Administration",
+      years: "2010 - 2014",
+    },
+    {
+      image: "/leaders/commander2.jpg",
+      name: "CDT. Col. Michael Jobi-Fele",
+      rank: "Coy Commanding Officer, Oscar Company",
+      regime: "Expansion Administration",
+      years: "2014 - 2018",
+    },
+    {
+      image: "/leaders/commander3.jpg",
+      name: "CDT. LT. Col. Jude Aneke (RTD.)",
+      rank: "Coy Commanding Officer, Oscar Company",
+      regime: "Modernization Administration",
+      years: "2018 - 2022",
+    },
+    {
+      image: "/leaders/commander3.jpg",
+      name: "CDT. Maj. Chima Daniel (RTD.)",
+      rank: "Coy Commanding Officer, Oscar Company",
+      regime: "Modernization Administration",
+      years: "2018 - 2022",
+    },
+    {
+      image: "/leaders/commander3.jpg",
+      name: "CDT.Maj. Ositadinma (RTD.)",
+      rank: "Coy Commanding Officer, Oscar Company",
+      regime: "Modernization Administration",
+      years: "2018 - 2022",
+    },
+    {
+      image: "/leaders/current.jpg",
+      name: "CDT. Maj. Adanu Ellen",
+      rank: "Coy Commander, Oscar Company",
+      regime: "Current Administration",
+      years: "2022 - Present",
+    },
+  ];
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center mb-3">
+          NACC Leadership Legacy
+        </h2>
+
+        <p className="text-center text-gray-600 mb-10">
+          Honouring the leaders who have contributed to the growth, discipline,
+          and development of the Nigerian Army Cadet Corps.
+        </p>
+
+        <div className="grid md:grid-cols-4 gap-8">
+          {administrations.map((leader, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+            >
+              <img
+                src={leader.image}
+                alt={leader.name}
+                className="w-full h-72 object-cover"
+              />
+
+              <div className="p-5 text-center">
+                <h3 className="font-bold text-lg">{leader.name}</h3>
+
+                <p className="text-green-700 font-semibold">{leader.rank}</p>
+
+                <p className="text-gray-700 mt-2">{leader.regime}</p>
+
+                <p className="text-sm text-gray-500">{leader.years}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default LeadershipLegacy;
