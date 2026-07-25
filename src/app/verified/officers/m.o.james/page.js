@@ -101,13 +101,13 @@ const VerifiedOfficerProfile = ({
   );
 };
 
-// Wrapper Component With Sample Data
+// Wrapper Component With Data
 const OfficerProfilePage = () => {
   return (
     <VerifiedOfficerProfile
       name="Cadet James Marvelous Oghenefejiro"
       photo="/assets/jjj.jpg"
-      rank="Cadet Lance Corporal"
+      rank="Cadet Sergeant"
       dob="2005-06-15"
       address="43, Bayo Enitan Street, Alagbado, Lagos State, Nigeria"
       intake="2025"
@@ -115,7 +115,7 @@ const OfficerProfilePage = () => {
         SerialNo: "NACC/OC/FSTCY/25/B/010",
         Batch: "2025 Bravo",
         Platoon: "Platoon 3",
-        Unit: "Parade Unit",
+        Unit: "Drill Instructor",
         Instructor: "Cdt. SSgt. Chinedu Simon",
         "Recruitment Date": "2025-04-15",
         "Medical Status": "Fit",
