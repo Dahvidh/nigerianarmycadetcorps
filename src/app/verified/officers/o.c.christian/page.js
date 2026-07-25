@@ -108,7 +108,7 @@ const OfficerProfilePage = () => {
       name="Cadet Onyemachi Chukwuebuka Christian"
       photo="/assets/oe.png"
       rank="Cadet Major"
-      dob="2005-06-15"
+      dob="1993-11-03"
       address="88, Adeshina road, Off ijesha expressway, Lagos State, Nigeria"
       intake="2011"
       recruitmentDetails={{
