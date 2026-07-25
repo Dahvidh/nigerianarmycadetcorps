@@ -112,12 +112,12 @@ const OfficerProfilePage = () => {
       address="88, Adeshina road, Off ijesha expressway, Lagos State, Nigeria"
       intake="2011"
       recruitmentDetails={{
-        SerialNo: "NACC/OC/FSTCY/11/A/001",
-        Batch: "2011 Alpha",
+        SerialNo: "NACC/OC/FSTCY/06/A/001",
+        Batch: "2006 Alpha",
         Platoon: "Platoon 1",
         Unit: "Drill instructor",
         Instructor: "CDT. Major Peter Obasi",
-        "Recruitment Date": "2011-04-15",
+        "Recruitment Date": "2006-04-15",
         "Medical Status": "Fit",
         Status: "Active",
         Post: "Acting Company Commanding Officer",
@@ -131,7 +131,7 @@ const OfficerProfilePage = () => {
         },
       ]}
       achievements={[
-        "Best Parade Commander - 2011-2012",
+        "Best Parade Commander - 2006-2009",
         "CSS",
       ]}
     />
