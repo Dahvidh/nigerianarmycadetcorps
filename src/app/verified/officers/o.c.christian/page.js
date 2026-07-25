@@ -101,7 +101,7 @@ const VerifiedOfficerProfile = ({
   );
 };
 
-// Wrapper Component With Sample Data
+// Wrapper Component With Data
 const OfficerProfilePage = () => {
   return (
     <VerifiedOfficerProfile
@@ -115,12 +115,12 @@ const OfficerProfilePage = () => {
         SerialNo: "NACC/OC/FSTCY/11/A/001",
         Batch: "2011 Alpha",
         Platoon: "Platoon 1",
-        Unit: "Drill instructor, cadet special forces",
-        Instructor: "Lt. Omoroje Samuel",
-        "Recruitment Date": "2010-04-15",
+        Unit: "Drill instructor",
+        Instructor: "CDT. Major Peter Obasi",
+        "Recruitment Date": "2011-04-15",
         "Medical Status": "Fit",
         Status: "Active",
-        Post: "Training Officer",
+        Post: "Acting Company Commanding Officer",
         "Training Status": "Active",
       }}
       fouls={[
@@ -132,7 +132,7 @@ const OfficerProfilePage = () => {
       ]}
       achievements={[
         "Best Parade Commander - 2011-2012",
-        "Top Scorer in Tactical Simulation",
+        "CSS",
       ]}
     />
   );
