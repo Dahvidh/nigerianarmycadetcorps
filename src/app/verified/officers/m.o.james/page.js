@@ -108,7 +108,7 @@ const OfficerProfilePage = () => {
       name="Cadet James Marvelous Oghenefejiro"
       photo="/assets/jjj.jpg"
       rank="Cadet Sergeant"
-      dob="2005-06-15"
+      dob="2009-10-22"
       address="43, Bayo Enitan Street, Alagbado, Lagos State, Nigeria"
       intake="2025"
       recruitmentDetails={{
